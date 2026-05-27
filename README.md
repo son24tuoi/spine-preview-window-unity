@@ -1,73 +1,77 @@
-Created: May 24, 2026 12:52 PM
+Modified: May 27, 2026 09:39 PM
 
-# Spine Preview Window - Thêm/Xóa Event
+# Spine Preview Window - Add/Remove Event
+---
+⚠️ **Requires a project with [Spine Unity](https://esotericsoftware.com/spine-unity-download) already installed.**
 
-Spine Preview Window là một bảng điều khiển trực quan trong Unity Engine, cho phép các nhà phát triển game và chuyên viên animator kiểm tra, tinh chỉnh và quản lý nhanh các tệp Spine 2D mà không cần phải mở phần mềm Spine chuyên dụng hay chạy trực tiếp trò chơi.
+---
+[Download Package](https://github.com/son24tuoi/spine-preview-window-unity/releases/tag/v0.0.1)
 
-<aside>
-💡
+[Source](https://github.com/son24tuoi/spine-preview-window-unity)
 
-Có thể thêm/xóa sự kiện (events) trong animation một cách nhanh chóng, thay vì phải phụ thuộc vào phần mềm Spine như thường lệ.
+The Spine Preview Window is a visual panel within the Unity Engine that allows game developers and animators to quickly inspect, tweak, and manage Spine 2D files without having to open the dedicated Spine software or run the game directly.
 
-</aside>
+>💡You can quickly add or remove events in animations, rather than relying on the Spine software as usual.
 
-Công cụ hỗ trợ trong quá trình làm việc, giúp phát hiện nhanh các lỗi hiển thị, đồng bộ hóa sự kiện âm thanh/ hiệu ứng (events) cực kỳ hiệu quả.
+This tool supports the workflow, helping to quickly detect display errors and synchronize audio/effect events extremely effectively.
 
-> **Cách mở Spine Preview**
-Trên thanh menu công cụ, chọn mục Tools → Spine Preview.
-> 
+> **How to open Spine Preview:**
+On the toolbar menu, select Tools → Spine Preview.
 
 ![SpinePreview-Demo.png](/Assets/SpinePreviewWindow/Images/SpinePreview-Demo.png)
 
-# Lợi ích khi sử dụng
+# Benefits of using
 
-- **Tiết kiệm thời gian:** Kiểm tra nhanh chuyển động của nhân vật ngay trong Editor mà không cần tốn thời gian play.
-- **Quản lý Event trực quan:** Gắn các sự kiện âm thanh/ hiệu ứng chính xác (mili giây) dựa trên Timeline trực quan.
-- **Kiểm tra lỗi hiển thị nhanh chóng:** Dễ dàng xem xương hoặc lưới để phát hiện các lỗi rách ảnh, lỗi biến dạng khi nhân vật chuyển động.
+- **Save time:** Quickly check character movements right in the Editor without having to play the animation.
+- **Visual Event Management:** Attach audio/effect events with precision (milliseconds) based on the visual Timeline.
+- **Quickly check for display errors:** Easily view bones or the mesh to detect clipping errors or distortion when the character moves.
 
-# Các thành phần giao diện chính
+# Main interface components
 
-## 1. Khu vực hiển thị trực quan
+## 1. Visual Display Area
 
-- **Preview Area:** Chiếm không gian lớn bên trái, hiển thị trực quan đối tượng và các chuyển động hoạt họa. Người dùng có thể quan sát trực tiếp nhân vật.
-    - Lăn chuột để thu phóng đối tượng.
-    - Kéo chuột trái để di chuyển đối tượng.
-- **Timeline Area:** Nằm phía dưới cùng bên trái, hiển thị tiến trình của hoạt họa với vạch thời gian (màu đỏ) giúp người dùng biết chính xác hoạt họa đang chạy đến đâu hoặc các vị trí sự kiện được kích hoạt (màu xanh).
-    - Click hoặc kéo chuột trái để thay đổi thời điểm hiển thị hoạt họa.
+- **Preview Area:** Occupies a large space on the left, visually displaying objects and animation movements. Users can directly observe the character.
+    - Scroll the mouse to zoom in or out on the object.
+    - Drag the left mouse button to move the object.
+- **Timeline Area:** Located at the bottom left, it displays the animation’s progress with a timeline (red) to help users see exactly where the animation is currently playing or where events are triggered (blue).
+    - Click or drag the left mouse button to change the animation playback time.
+    - Hover over the green marker to display event information.
 
-## 2. Khu vực điều khiển
+## 2. Control Area
 
-- **Skeleton Data Asset:** Chọn file Spine.
-- **Spine Json Asset:** Tự động load dựa theo Skeleton Data Asset.
-    - Chỉ sửa được Event nếu file này là dạng JSON.
-- **Show Triangle Mesh:** Hiển thị lưới tam giác của đối tượng.
-- **Show Bones:** Hiển thị hệ thống xương của đối tượng.
-- **Fit Camera:** Căn chỉnh lại camera vừa với đối tượng.
-- **Skin:** Chọn skin của đối tượng.
-- **Setup Pose:** Đưa đối tượng về tư thế mặc định.
-- **Animations**: Chọn animation muốn chạy thử.
-- **Loop:** Animation chạy tự lặp lại.
-- **Current Time:** Hiển thị thời gian chạy hiện tại, có thể thay đổi.
-- **Speed:** Thanh trượt điều chỉnh tốc độ phát animation (nhanh/chậm).
-- **Play:** Chạy animation.
-- **Pause:** Tạm dừng animation.
-- **Stop:** Dừng chạy animation.
-- **Event List:** Hiển thị danh sách các sự kiện có trong animation.
-    - Nhấn vào sự kiện để nhảy tới mốc thời gian tương ứng.
-    - **Delete:** xóa sự kiện.
-    - **Create Event:** Tạo sự kiện mới.
-        - **Name:** Nhập tên sự kiện mới.
-        - **Time:** Nhập mốc thời gian sự kiện mới.
-        - **Add Event:** Tạo sự kiện mới theo nội dung đã nhập.
-- **Save Events:** Lưu lại các thay đổi sự kiện nếu cần.
+- **Skeleton Data Asset:** Select a Spine file.
+- **Spine JSON Asset:** Automatically loaded based on the Skeleton Data Asset.
+    - You can only edit the Event if this file is in JSON format.
+- **Show Triangle Mesh:** Display the object’s triangle mesh.
+- **Show Bones:** Displays the object’s bone system.
+- **Fit Camera:** Adjust the camera to fit the object.
+- **Skin: Select** the object's skin.
+- **Setup Pose: Reset** the object to its default pose.
+- **Animations**: Select the animation you want to test.
+- **Loop:** The animation loops automatically.
+- **Current Time: Displays** the current playback time; can be adjusted.
+- **Speed: A slider** to adjust the animation playback speed (fast/slow).
+- **Play:** Play the animation.
+- **Pause: Pause** the animation.
+- **Stop: Stops** the animation.
+- **Event List: Displays** the list of events in the animation.
+    - Click on an event to jump to the corresponding timestamp.
+    - **Delete: Delete** an event.
+    - **Create Event:** Create a new event.
+        - **Name: Enter** the name of the new event.
+        - **Time: Enter** the new event’s timestamp.
+        - **Add Event:** Create a new event based on the entered details.
+- **Save Events:** Save event changes if necessary.
     
-    <aside>
-    💡
-    
-    **Lưu ý:** Khi Save sẽ tạo ra một file data spine JSON mới và có file Skeleton Data Asset mới chứa nội dung (không dùng file vừa sửa).
-    
-    Ví dụ file gốc là `spineboy-unity.json` thì file mới sẽ là `spineboy-unity_202605241206.json`. Phần tên thêm mới là thời gian tạo file.
-    
-    Nếu muốn xem những thay đổi đã lưu thì chọn lại file Skeleton Data Asset.
-    
-    </aside>
+>💡**Note:** Saving will create a new Spine JSON data file and a new Skeleton Data Asset file containing the content (the file you just edited will not be used).
+>
+> For example, if the original file is spineboy-unity.json, the new file will be spineboy-unity_202605241206.json. The added portion of the name is the file creation time.
+>
+> If you want to view the saved changes, select the Skeleton Data Asset file again.
+
+# Extensions
+
+- The package uses Newtonsoft.Json. Here are the installation instructions:
+    1. On the menu bar, select **Window → Package Manager**.
+    2. In the top-left corner of the Package Manager window, click the **+** sign and select **Add package by name…**
+    3. Enter the name: **com.unity.nuget.newtonsoft-json and** click **Add**.
