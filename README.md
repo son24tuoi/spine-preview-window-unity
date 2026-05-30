@@ -1,11 +1,11 @@
-Modified: May 27, 2026 09:39 PM
+Modified: May 30, 2026 09:34 PM
 
 # Spine Preview Window - Add/Remove Event
 ---
 ⚠️ **Requires a project with [Spine Unity](https://esotericsoftware.com/spine-unity-download) already installed.**
 
 ---
-[Download Package](https://github.com/son24tuoi/spine-preview-window-unity/releases/tag/v0.0.1)
+[Download Package](https://github.com/son24tuoi/spine-preview-window-unity/releases)
 
 [Source](https://github.com/son24tuoi/spine-preview-window-unity)
 
