@@ -1,12 +1,10 @@
-#if UNITY_EDITOR
+#if UNITY_EDITOR && SPINE_EXIST
+
 using System.Collections.Generic;
 using Spine;
 using Spine.Unity;
 using UnityEditor;
 using UnityEngine;
-
-// 
-// 
 
 namespace One.Editor.Spine
 {

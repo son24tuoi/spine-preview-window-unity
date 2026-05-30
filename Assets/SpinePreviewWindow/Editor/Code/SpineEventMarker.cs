@@ -1,4 +1,4 @@
-#if UNITY_EDITOR
+#if UNITY_EDITOR && SPINE_EXIST
 
 using System;
 
@@ -24,7 +24,6 @@ namespace One.Editor.Spine
 
         public readonly bool Equal(SpineEventMarker other) => name == other.name && time == other.time;
     }
-
+}
 
 #endif
-}

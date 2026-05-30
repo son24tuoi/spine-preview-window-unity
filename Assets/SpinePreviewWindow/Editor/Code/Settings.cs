@@ -1,5 +1,4 @@
-
-#if UNITY_EDITOR
+#if UNITY_EDITOR && SPINE_EXIST
 
 using UnityEditor;
 using UnityEngine;
@@ -7,7 +6,7 @@ using UnityEngine;
 namespace One.Editor.Spine
 {
     public class Settings
-    {
+    {   
         public const float FPS = 30f;
 
         public const float MinPlaySpeed = 0f;

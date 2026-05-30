@@ -1,0 +1,21 @@
+{
+    "name": "spine-preview-editor",
+    "rootNamespace": "",
+    "references": [
+		"spine-csharp",
+		"spine-unity"
+	],
+    "includePlatforms": [
+		"Editor"
+	],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "SPINE_EXIST"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
