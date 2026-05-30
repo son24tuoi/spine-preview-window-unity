@@ -1,4 +1,4 @@
-#if UNITY_EDITOR
+#if UNITY_EDITOR && SPINE_EXIST
 
 using System.Collections.Generic;
 using Spine;

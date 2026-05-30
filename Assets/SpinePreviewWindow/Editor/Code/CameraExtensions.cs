@@ -1,3 +1,5 @@
+#if UNITY_EDITOR && SPINE_EXIST
+
 using Spine;
 using Spine.Unity;
 using UnityEngine;
@@ -51,3 +53,5 @@ namespace One.Editor.Spine
         }
     }
 }
+
+#endif
